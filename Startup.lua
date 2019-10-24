@@ -5,30 +5,92 @@ AddonSnippets.defaultVars = {
     maxCrafting = {}
 }
 AddonSnippets.savedVariables = {}
-AddonSnippets.allMaxCrafting = {
+AddonSnippets.allMaxCrafting = 
+{
     [1] = 
     {
-        ["Level"] = 
+        ["CraftRequestTable"] = 
         {
-            [1] = 150,
-            [2] = "CP 150",
+            [1] = 8,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9093,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
         },
         ["Style"] = 
         {
             [1] = 3,
             [2] = "Orc",
             [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 1,
+        ["Reference"] = 9093,
+        ["Weight"] = 
+        {
+            [1] = 1,
+            [2] = "Heavy",
         },
         ["Pattern"] = 
         {
             [1] = 8,
             [2] = "Chest",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [2] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 12,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9094,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -36,54 +98,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 8,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9094,
         ["Weight"] = 
         {
             [1] = 1,
             [2] = "Heavy",
-        },
-    },
-    [2] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 12,
             [2] = "Legs",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [3] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 3,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9095,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -91,54 +155,55 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 12,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9095,
         ["Weight"] = 
         {
-            [1] = 1,
-            [2] = "Heavy",
-        },
-    },
-    [3] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
+            [2] = "",
         },
         ["Pattern"] = 
         {
             [1] = 3,
             [2] = "Sword",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [4] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 11,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9096,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -146,53 +211,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 3,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9096,
         ["Weight"] = 
         {
-            [2] = "",
-        },
-    },
-    [4] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
+            [1] = 1,
+            [2] = "Heavy",
         },
         ["Pattern"] = 
         {
             [1] = 11,
             [2] = "Head",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [5] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 13,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9097,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -200,54 +268,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 11,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9097,
         ["Weight"] = 
         {
             [1] = 1,
             [2] = "Heavy",
-        },
-    },
-    [5] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 13,
             [2] = "Shoulders",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [6] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 7,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9098,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -255,54 +325,55 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 13,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9098,
         ["Weight"] = 
         {
-            [1] = 1,
-            [2] = "Heavy",
-        },
-    },
-    [6] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
+            [2] = "",
         },
         ["Pattern"] = 
         {
             [1] = 7,
             [2] = "Dagger",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [7] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 9,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9099,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -310,53 +381,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 7,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9099,
         ["Weight"] = 
         {
-            [2] = "",
-        },
-    },
-    [7] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
+            [1] = 1,
+            [2] = "Heavy",
         },
         ["Pattern"] = 
         {
             [1] = 9,
             [2] = "Feet",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [8] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 10,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9100,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -364,54 +438,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 9,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9100,
         ["Weight"] = 
         {
             [1] = 1,
             [2] = "Heavy",
-        },
-    },
-    [8] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 10,
             [2] = "Hands",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [9] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 6,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 1,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9101,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -419,54 +495,55 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 10,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 1,
+        ["Reference"] = 9101,
         ["Weight"] = 
         {
-            [1] = 1,
-            [2] = "Heavy",
-        },
-    },
-    [9] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
+            [2] = "",
         },
         ["Pattern"] = 
         {
             [1] = 6,
             [2] = "Greatsword",
         },
-        ["Station"] = 1,
-        ["Quality"] = 
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [10] = 
+    {
+        ["CraftRequestTable"] = 
         {
             [1] = 1,
-            [2] = "Normal",
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9102,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -474,53 +551,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 6,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 1,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 2,
+        ["Reference"] = 9102,
         ["Weight"] = 
         {
-            [2] = "",
-        },
-    },
-    [10] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
             [1] = 3,
-            [2] = "Orc",
-            [3] = true,
+            [2] = "Light",
         },
         ["Pattern"] = 
         {
             [1] = 1,
             [2] = "Chest",
         },
-        ["Station"] = 2,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [11] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 6,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9103,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -528,54 +608,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
+            [2] = "Normal",
         },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
+        ["Station"] = 2,
+        ["Reference"] = 9103,
         ["Weight"] = 
         {
             [1] = 3,
             [2] = "Light",
-        },
-    },
-    [11] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 6,
             [2] = "Legs",
         },
-        ["Station"] = 2,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [12] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 7,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9104,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -583,109 +665,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 6,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 2,
+        ["Reference"] = 9104,
         ["Weight"] = 
         {
             [1] = 3,
             [2] = "Light",
-        },
-    },
-    [12] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 7,
             [2] = "Shoulders",
         },
-        ["Station"] = 2,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 7,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [1] = 3,
-            [2] = "Light",
+            [1] = 150,
+            [2] = "CP 150",
         },
     },
     [13] = 
     {
-        ["Level"] = 
+        ["CraftRequestTable"] = 
         {
-            [1] = 150,
-            [2] = "CP 150",
+            [1] = 11,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9105,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
         },
         ["Style"] = 
         {
             [1] = 3,
             [2] = "Orc",
             [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 3,
-            [2] = "Feet",
-        },
-        ["Station"] = 2,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
         },
         ["Trait"] = 
         {
@@ -693,164 +722,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 3,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [1] = 3,
-            [2] = "Light",
-        },
-    },
-    [14] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 5,
-            [2] = "Head",
-        },
-        ["Station"] = 2,
         ["Quality"] = 
         {
             [1] = 1,
             [2] = "Normal",
         },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 5,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [1] = 3,
-            [2] = "Light",
-        },
-    },
-    [15] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 8,
-            [2] = "Belt",
-        },
         ["Station"] = 2,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 8,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
+        ["Reference"] = 9105,
         ["Weight"] = 
         {
-            [1] = 3,
-            [2] = "Light",
-        },
-    },
-    [16] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
+            [1] = 2,
+            [2] = "Medium",
         },
         ["Pattern"] = 
         {
             [1] = 11,
             [2] = "Hands",
         },
-        ["Station"] = 2,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [14] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 12,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9106,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -858,54 +779,56 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 11,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 2,
+        ["Reference"] = 9106,
         ["Weight"] = 
         {
             [1] = 2,
             [2] = "Medium",
-        },
-    },
-    [17] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 12,
             [2] = "Head",
         },
-        ["Station"] = 2,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [15] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 14,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9107,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -913,116 +836,202 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 12,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 2,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 2,
+        ["Reference"] = 9107,
         ["Weight"] = 
         {
             [1] = 2,
             [2] = "Medium",
-        },
-    },
-    [18] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 14,
             [2] = "Shoulders",
         },
-        ["Station"] = 2,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
         },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
+    },
+    [16] = 
+    {
         ["CraftRequestTable"] = 
         {
-            [1] = 14,
+            [1] = 3,
             [2] = true,
             [3] = 150,
             [4] = 3,
             [5] = 1,
             [6] = false,
             [7] = 2,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9108,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 2,
+        ["Reference"] = 9108,
         ["Weight"] = 
         {
-            [1] = 2,
-            [2] = "Medium",
+            [1] = 3,
+            [2] = "Light",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 3,
+            [2] = "Feet",
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [17] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 5,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9109,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 2,
+        ["Reference"] = 9109,
+        ["Weight"] = 
+        {
+            [1] = 3,
+            [2] = "Light",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 5,
+            [2] = "Head",
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [18] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 8,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 2,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9110,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 2,
+        ["Reference"] = 9110,
+        ["Weight"] = 
+        {
+            [1] = 3,
+            [2] = "Light",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 8,
+            [2] = "Belt",
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
         },
     },
     [19] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 6,
-            [2] = "Restoration Staff",
-        },
-        ["Station"] = 6,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 6,
@@ -1032,105 +1041,109 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 6,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9111,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 6,
+        ["Reference"] = 9111,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 6,
+            [2] = "Restoration Staff",
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
         },
     },
     [20] = 
     {
-        ["Level"] = 
+        ["CraftRequestTable"] = 
         {
-            [1] = 150,
-            [2] = "CP 150",
+            [1] = 6,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 6,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9112,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
         },
         ["Style"] = 
         {
             [1] = 3,
             [2] = "Orc",
             [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 6,
+        ["Reference"] = 9112,
+        ["Weight"] = 
+        {
+            [2] = "",
         },
         ["Pattern"] = 
         {
             [1] = 6,
             [2] = "Restoration Staff",
         },
-        ["Station"] = 6,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 6,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 6,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [2] = "",
+            [1] = 150,
+            [2] = "CP 150",
         },
     },
     [21] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 2,
-            [2] = "Shield",
-        },
-        ["Station"] = 6,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 2,
@@ -1140,51 +1153,53 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 6,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9113,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 6,
+        ["Reference"] = 9113,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 2,
+            [2] = "Shield",
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
         },
     },
     [22] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 1,
-            [2] = "Bow",
-        },
-        ["Station"] = 6,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 1,
@@ -1194,51 +1209,53 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 6,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9114,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 6,
+        ["Reference"] = 9114,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 1,
+            [2] = "Bow",
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
         },
     },
     [23] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 1,
-            [2] = "Bow",
-        },
-        ["Station"] = 6,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 1,
@@ -1248,44 +1265,134 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 6,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9115,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [2] = "",
-        },
-    },
-    [24] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
         },
         ["Style"] = 
         {
             [1] = 3,
             [2] = "Orc",
             [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 6,
+        ["Reference"] = 9115,
+        ["Weight"] = 
+        {
+            [2] = "",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 1,
+            [2] = "Bow",
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [24] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 2,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 6,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9116,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
+        },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 6,
+        ["Reference"] = 9116,
+        ["Weight"] = 
+        {
+            [2] = "",
         },
         ["Pattern"] = 
         {
             [1] = 2,
             [2] = "Shield",
         },
-        ["Station"] = 6,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [25] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 3,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 6,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9117,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -1293,53 +1400,55 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 2,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 6,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 6,
+        ["Reference"] = 9117,
         ["Weight"] = 
         {
             [2] = "",
-        },
-    },
-    [25] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 3,
             [2] = "Fire Staff",
         },
-        ["Station"] = 6,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
+        },
+    },
+    [26] = 
+    {
+        ["CraftRequestTable"] = 
+        {
+            [1] = 4,
+            [2] = true,
+            [3] = 150,
+            [4] = 3,
+            [5] = 1,
+            [6] = false,
+            [7] = 6,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9118,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
+        },
+        ["Style"] = 
+        {
+            [1] = 3,
+            [2] = "Orc",
+            [3] = true,
         },
         ["Trait"] = 
         {
@@ -1347,90 +1456,49 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 3,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 6,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
+        ["Quality"] = 
         {
             [1] = 1,
-            [2] = "No Set",
-            [3] = true,
+            [2] = "Normal",
         },
+        ["Station"] = 6,
+        ["Reference"] = 9118,
         ["Weight"] = 
         {
             [2] = "",
-        },
-    },
-    [26] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Style"] = 
-        {
-            [1] = 3,
-            [2] = "Orc",
-            [3] = true,
         },
         ["Pattern"] = 
         {
             [1] = 4,
             [2] = "Ice Staff",
         },
-        ["Station"] = 6,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
+            [1] = 150,
+            [2] = "CP 150",
         },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
+    },
+    [27] = 
+    {
         ["CraftRequestTable"] = 
         {
-            [1] = 4,
+            [1] = 5,
             [2] = true,
             [3] = 150,
             [4] = 3,
             [5] = 1,
             [6] = false,
             [7] = 6,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9119,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [2] = "",
-        },
-    },
-    [27] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
         },
         ["Style"] = 
         {
@@ -1438,71 +1506,36 @@ AddonSnippets.allMaxCrafting = {
             [2] = "Orc",
             [3] = true,
         },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Station"] = 6,
+        ["Reference"] = 9119,
+        ["Weight"] = 
+        {
+            [2] = "",
+        },
         ["Pattern"] = 
         {
             [1] = 5,
             [2] = "Lightning Staff",
         },
-        ["Station"] = 6,
-        ["Quality"] = 
+        ["Level"] = 
         {
-            [1] = 1,
-            [2] = "Normal",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["CraftRequestTable"] = 
-        {
-            [1] = 5,
-            [2] = true,
-            [3] = 150,
-            [4] = 3,
-            [5] = 1,
-            [6] = false,
-            [7] = 6,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [2] = "",
+            [1] = 150,
+            [2] = "CP 150",
         },
     },
     [28] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 1,
-            [2] = "Ring",
-        },
-        ["Station"] = 7,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 1,
@@ -1512,45 +1545,47 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 7,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9120,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+        ["Station"] = 7,
+        ["Reference"] = 9120,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 1,
+            [2] = "Ring",
         },
     },
     [29] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 1,
-            [2] = "Ring",
-        },
-        ["Station"] = 7,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 1,
@@ -1560,45 +1595,47 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 7,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9121,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+        ["Station"] = 7,
+        ["Reference"] = 9121,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 1,
+            [2] = "Ring",
         },
     },
     [30] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 1,
-            [2] = "Ring",
-        },
-        ["Station"] = 7,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 1,
@@ -1608,75 +1645,116 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 7,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9122,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+        ["Station"] = 7,
+        ["Reference"] = 9122,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 1,
+            [2] = "Ring",
         },
     },
     [31] = 
     {
-        ["Level"] = 
+        ["CraftRequestTable"] = 
         {
-            [1] = 150,
-            [2] = "CP 150",
+            [1] = 1,
+            [2] = true,
+            [3] = 150,
+            [4] = 0,
+            [5] = 1,
+            [6] = false,
+            [7] = 7,
+            [8] = 0,
+            [9] = 1,
+            [10] = true,
+            [11] = 9123,
+        },
+        ["Set"] = 
+        {
+            [1] = 0,
+            [2] = "No Set",
+            [3] = true,
         },
         ["Trait"] = 
         {
             [1] = 1,
             [2] = "No Trait",
             [3] = true,
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+        ["Station"] = 7,
+        ["Reference"] = 9123,
+        ["Weight"] = 
+        {
+            [2] = "",
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
         },
         ["Pattern"] = 
         {
             [1] = 1,
             [2] = "Ring",
         },
-        ["Station"] = 7,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
+    },
+    [32] = 
+    {
         ["CraftRequestTable"] = 
         {
-            [1] = 1,
+            [1] = 2,
             [2] = true,
             [3] = 150,
             [4] = 0,
             [5] = 1,
             [6] = false,
             [7] = 7,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9124,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [2] = "",
-        },
-    },
-    [32] = 
-    {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
         },
         ["Trait"] = 
         {
@@ -1684,65 +1762,30 @@ AddonSnippets.allMaxCrafting = {
             [2] = "No Trait",
             [3] = true,
         },
-        ["Pattern"] = 
+        ["Level"] = 
         {
-            [1] = 2,
-            [2] = "Necklace",
+            [1] = 150,
+            [2] = "CP 150",
         },
         ["Station"] = 7,
+        ["Reference"] = 9124,
+        ["Weight"] = 
+        {
+            [2] = "",
+        },
         ["Quality"] = 
         {
             [1] = 1,
             [2] = "Normal",
         },
-        ["CraftRequestTable"] = 
+        ["Pattern"] = 
         {
             [1] = 2,
-            [2] = true,
-            [3] = 150,
-            [4] = 0,
-            [5] = 1,
-            [6] = false,
-            [7] = 7,
-            [8] = 1,
-            [9] = 1,
-            [10] = true,
-        },
-        ["Set"] = 
-        {
-            [1] = 1,
-            [2] = "No Set",
-            [3] = true,
-        },
-        ["Weight"] = 
-        {
-            [2] = "",
+            [2] = "Necklace",
         },
     },
     [33] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 2,
-            [2] = "Necklace",
-        },
-        ["Station"] = 7,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 2,
@@ -1752,45 +1795,47 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 7,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9125,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+        ["Station"] = 7,
+        ["Reference"] = 9125,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 2,
+            [2] = "Necklace",
         },
     },
     [34] = 
     {
-        ["Level"] = 
-        {
-            [1] = 150,
-            [2] = "CP 150",
-        },
-        ["Trait"] = 
-        {
-            [1] = 1,
-            [2] = "No Trait",
-            [3] = true,
-        },
-        ["Pattern"] = 
-        {
-            [1] = 2,
-            [2] = "Necklace",
-        },
-        ["Station"] = 7,
-        ["Quality"] = 
-        {
-            [1] = 1,
-            [2] = "Normal",
-        },
         ["CraftRequestTable"] = 
         {
             [1] = 2,
@@ -1800,19 +1845,43 @@ AddonSnippets.allMaxCrafting = {
             [5] = 1,
             [6] = false,
             [7] = 7,
-            [8] = 1,
+            [8] = 0,
             [9] = 1,
             [10] = true,
+            [11] = 9126,
         },
         ["Set"] = 
         {
-            [1] = 1,
+            [1] = 0,
             [2] = "No Set",
             [3] = true,
         },
+        ["Trait"] = 
+        {
+            [1] = 1,
+            [2] = "No Trait",
+            [3] = true,
+        },
+        ["Level"] = 
+        {
+            [1] = 150,
+            [2] = "CP 150",
+        },
+        ["Station"] = 7,
+        ["Reference"] = 9126,
         ["Weight"] = 
         {
             [2] = "",
+        },
+        ["Quality"] = 
+        {
+            [1] = 1,
+            [2] = "Normal",
+        },
+        ["Pattern"] = 
+        {
+            [1] = 2,
+            [2] = "Necklace",
         },
     },
 }

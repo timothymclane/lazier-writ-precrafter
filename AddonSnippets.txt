@@ -2,7 +2,8 @@
 ## Description: Little helpers written by Aldanga
 ## Author: Aldanga
 ## Version: 1.0.0
-## APIVersion: 100026
+## APIVersion: 100028 100029
+## DependsOn: LibLazyCrafting
 ## SavedVariables: AddonSnippetsSettings_db
 
 Startup.lua
