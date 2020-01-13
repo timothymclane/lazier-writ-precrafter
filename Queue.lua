@@ -60,7 +60,7 @@ end
 
 function AddonSnippets:Queue(requestTable, craftMultiplier)
   if LazyCrafter == nil then
-    LazyCrafter = LibLazyCrafting:AddRequestingAddon('DolgubonsLazySetCrafter', false, LLCCraftCompleteHandler)
+    LazyCrafter = LibLazyCrafting:GetRequestingAddon('DolgubonsLazySetCrafter')
   end
   for i = 1, craftMultiplier do
     -- First, create a deep(er) copy. Tables only go down one deep so that's max depth we need to copy
