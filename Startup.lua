@@ -1885,6 +1885,7 @@ AddonSnippets.allMaxCrafting =
         },
     },
 }
+AddonSnippets.allLowCrafting = {}
 
 function AddonSnippets:OnAddOnLoaded(event, addonName)
     if (addonName ~= ADDON_NAME) then
@@ -1921,13 +1922,23 @@ function AddonSnippets:DefaultMaxCraftingQueue(multiplier)
 end
 
 function AddonSnippets:SetCraftingQueue(multiplier)
-    for k, v in pairs(self.allMaxCrafting) do
+    local isLevelOne = GetNonCombatBonus(NON_COMBAT_BONUS_CLOTHIER_LEVEL) == 1
+    local queue = isLevelOne and self.allLowCrafting or self.allMaxCrafting
+    for k, v in pairs(queue) do
         self:Queue(v, multiplier)
     end
 end
 
 function AddonSnippets:Initialize()
     self:ConsoleCommands()
+    self.allLowCrafting = ZO_DeepTableCopy(self.allMaxCrafting)
+    for _,v in pairs(self.allLowCrafting) do
+        v.CraftRequestTable[2] = false
+        v.CraftRequestTable[3] = 1
+        v.Level[1] = 1
+        v.Level[2] = "1"
+        v.Level[3] = false
+    end
 end
 
 function AddonSnippets:ConsoleCommands()
