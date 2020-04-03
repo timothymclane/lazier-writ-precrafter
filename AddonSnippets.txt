@@ -1,7 +1,7 @@
 ## Title: Addon Snippets
 ## Description: Little helpers written by Aldanga
 ## Author: Aldanga
-## Version: 1.0.1
+## Version: 1.1.0
 ## APIVersion: 100030
 ## DependsOn: LibLazyCrafting
 ## SavedVariables: AddonSnippetsSettings_db
