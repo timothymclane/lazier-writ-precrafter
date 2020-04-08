@@ -117,17 +117,17 @@ local DAILY_ROTATION = {
     --Fire Staff
     [4] = {
       [1] = 3,
-      [15] = 2,
+      [15] = 1,
     },
     --Ice Staff
     [5] = {
       [1] = 4,
-      [15] = 2,
+      [15] = 1,
     },
     --Lightning Staff
     [6] = {
       [1] = 5,
-      [15] = 2,
+      [15] = 1,
     },
   },
   [CRAFTING_TYPE_JEWELRYCRAFTING] = {
@@ -192,19 +192,31 @@ local CRAFTING_BONUSES = {
   [CRAFTING_TYPE_WOODWORKING] = NON_COMBAT_BONUS_WOODWORKING_LEVEL,
   [CRAFTING_TYPE_JEWELRYCRAFTING] = NON_COMBAT_BONUS_JEWELRYCRAFTING_LEVEL,
 }
-
+DolgubonGlobalDebugOutput = function(...) d(...) end
 function LazierCrafterQueue:New()
   local obj = ZO_Object.New(self)
   self:Initialize()
   return obj
 end
 
-local function callbackFunction(event, craftingType, addon, requestTable)
-  d(event, craftingType, addon, requestTable)
+-- Events are in LibLazyCrafting.lua:594
+function LazierCrafterQueue:CallbackFunction()
+  return function (event, craftingType, requestTable)
+    d(event, craftingType, requestTable)
+    -- We're done at the station and haven't left yet, so let's leave
+    if event == LLC_NO_FURTHER_CRAFT_POSSIBLE and GetCraftingInteractionType() ~= 0 and self.QueueActive[craftingType] then
+      d('We should exit now')
+      self.QueueActive[craftingType] = false
+      SCENE_MANAGER:HideCurrentScene()
+    elseif event == LLC_INSUFFICIENT_MATERIALS then
+      d('Not enough mats!')
+    end
+  end
 end
 
 function LazierCrafterQueue:Initialize()
-  self.InteractionTable = LibLazyCrafting:AddRequestingAddon(LazierWritCrafter.NAME, true, callbackFunction)
+  self.InteractionTable = LibLazyCrafting:AddRequestingAddon(LazierWritCrafter.NAME, true, self:CallbackFunction(), "Aldanga")
+  self.QueueActive = {}
 end
 
 -- LLC_CraftSmithingItemByLevel(self,
@@ -225,6 +237,7 @@ end
 --  quantity,
 --  overrideNonMulticraft)
 function LazierCrafterQueue:AddProfession(professionId, multiplier)
+  self.QueueActive[professionId] = true
   local craftingPassive = GetNonCombatBonus(CRAFTING_BONUSES[professionId])
   local isCP, craftingLevel = unpack(WRIT_LEVELS[professionId][craftingPassive])
   local craftableItems = ZO_DeepTableCopy(DAILY_ROTATION[professionId])
@@ -242,4 +255,11 @@ end
 
 function LazierCrafterQueue:Clear()
   self.InteractionTable:cancelItem()
+  for key, value in pairs(self.QueueSet) do
+    self.QueueSet[key] = false
+  end
+end
+
+function LazierCrafterQueue:Count()
+
 end
