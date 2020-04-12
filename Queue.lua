@@ -172,6 +172,12 @@ local BASE_LEVELS = {
   [9] = { true, 90 },
   [10] = { true, 150 },
 }
+local ta = 45850
+local enchantEssences ={
+  45833,
+  45831,
+  45832
+}
 
 local WRIT_LEVELS = {
   [CRAFTING_TYPE_BLACKSMITHING] = BASE_LEVELS,
@@ -186,13 +192,38 @@ local WRIT_LEVELS = {
   }
 }
 
+local potencyIds = {
+
+[10] = 64509,
+
+}
+
+--[[
+45855,
+45856,
+45857,
+45806,
+45807,
+45808,
+45809,
+45810,
+45811,
+45812,
+45813,
+45814,
+45815,
+45816,
+
+]]
+
 local CRAFTING_BONUSES = {
   [CRAFTING_TYPE_BLACKSMITHING] = NON_COMBAT_BONUS_BLACKSMITHING_LEVEL,
   [CRAFTING_TYPE_CLOTHIER] = NON_COMBAT_BONUS_CLOTHIER_LEVEL,
   [CRAFTING_TYPE_WOODWORKING] = NON_COMBAT_BONUS_WOODWORKING_LEVEL,
   [CRAFTING_TYPE_JEWELRYCRAFTING] = NON_COMBAT_BONUS_JEWELRYCRAFTING_LEVEL,
+  [CRAFTING_TYPE_ENCHANTING] = NON_COMBAT_BONUS_ENCHANTING_LEVEL
 }
-DolgubonGlobalDebugOutput = function(...) d(...) end
+-- DolgubonGlobalDebugOutput = function(...) d(...) end
 function LazierCrafterQueue:New()
   local obj = ZO_Object.New(self)
   self:Initialize()
@@ -202,14 +233,11 @@ end
 -- Events are in LibLazyCrafting.lua:594
 function LazierCrafterQueue:CallbackFunction()
   return function (event, craftingType, requestTable)
-    d(event, craftingType, requestTable)
     -- We're done at the station and haven't left yet, so let's leave
     if event == LLC_NO_FURTHER_CRAFT_POSSIBLE and GetCraftingInteractionType() ~= 0 and self.QueueActive[craftingType] then
-      d('We should exit now')
       self.QueueActive[craftingType] = false
-      SCENE_MANAGER:HideCurrentScene()
+      -- SCENE_MANAGER:HideCurrentScene()
     elseif event == LLC_INSUFFICIENT_MATERIALS then
-      d('Not enough mats!')
     end
   end
 end
@@ -238,18 +266,29 @@ end
 --  overrideNonMulticraft)
 function LazierCrafterQueue:AddProfession(professionId, multiplier)
   self.QueueActive[professionId] = true
-  local craftingPassive = GetNonCombatBonus(CRAFTING_BONUSES[professionId])
-  local isCP, craftingLevel = unpack(WRIT_LEVELS[professionId][craftingPassive])
-  local craftableItems = ZO_DeepTableCopy(DAILY_ROTATION[professionId])
-  for k, item in ipairs(craftableItems) do
-    item[2] = isCP
-    item[3] = craftingLevel
-    item[7] = professionId
-    item[15] = multiplier * item[15]
-    ZO_DeepTableCopy(defaultWritOptions, item)
-  end
-  for key, craftRequest in pairs(craftableItems) do
-    self.InteractionTable:CraftSmithingItemByLevel(unpack(craftRequest))    
+  if professionId == CRAFTING_TYPE_ENCHANTING then
+    local craftingPassive = GetNonCombatBonus(CRAFTING_BONUSES[professionId])
+    local potency = potencyIds[craftingPassive]
+    for k, essence in pairs(enchantEssences) do
+      for i = 1, multiplier do
+        self.InteractionTable:CraftEnchantingItemId(potency, essence, ta, true )
+      end
+    end
+
+  else
+    local craftingPassive = GetNonCombatBonus(CRAFTING_BONUSES[professionId])
+    local isCP, craftingLevel = unpack(WRIT_LEVELS[professionId][craftingPassive])
+    local craftableItems = ZO_DeepTableCopy(DAILY_ROTATION[professionId])
+    for k, item in ipairs(craftableItems) do
+      item[2] = isCP
+      item[3] = craftingLevel
+      item[7] = professionId
+      item[15] = multiplier * item[15]
+      ZO_DeepTableCopy(defaultWritOptions, item)
+    end
+    for key, craftRequest in pairs(craftableItems) do
+      self.InteractionTable:CraftSmithingItemByLevel(unpack(craftRequest))    
+    end
   end
 end
 

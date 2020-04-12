@@ -22,10 +22,11 @@ end
 
 function LazierWritCrafter:SetCraftingQueue(multiplier)
     local queue = {
-        [1] = CRAFTING_TYPE_CLOTHIER,
-        [2] = CRAFTING_TYPE_BLACKSMITHING,
-        [3] = CRAFTING_TYPE_WOODWORKING,
-        [4] = CRAFTING_TYPE_JEWELRYCRAFTING
+        CRAFTING_TYPE_CLOTHIER,
+        CRAFTING_TYPE_BLACKSMITHING,
+        CRAFTING_TYPE_WOODWORKING,
+        CRAFTING_TYPE_JEWELRYCRAFTING,
+        CRAFTING_TYPE_ENCHANTING
     }
     for k, v in pairs(queue) do
         self.Modules.Queue:AddProfession(v, multiplier)
