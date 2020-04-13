@@ -192,24 +192,32 @@ local CRAFTING_BONUSES = {
   [CRAFTING_TYPE_WOODWORKING] = NON_COMBAT_BONUS_WOODWORKING_LEVEL,
   [CRAFTING_TYPE_JEWELRYCRAFTING] = NON_COMBAT_BONUS_JEWELRYCRAFTING_LEVEL,
 }
-DolgubonGlobalDebugOutput = function(...) d(...) end
+-- DolgubonGlobalDebugOutput = function(...) d(...) end
 function LazierCrafterQueue:New()
   local obj = ZO_Object.New(self)
   self:Initialize()
   return obj
 end
 
+local logDisplayNames = {['@Aldanga'] = true, ['@FoodandStuff'] = true}
+
+function LazierCrafterQueue.Log(...)
+  if logDisplayNames[GetDisplayName()] then
+    d(...)
+  end
+end
+
 -- Events are in LibLazyCrafting.lua:594
 function LazierCrafterQueue:CallbackFunction()
   return function (event, craftingType, requestTable)
-    d(event, craftingType, requestTable)
+    self.Log(event, craftingType, requestTable)
     -- We're done at the station and haven't left yet, so let's leave
     if event == LLC_NO_FURTHER_CRAFT_POSSIBLE and GetCraftingInteractionType() ~= 0 and self.QueueActive[craftingType] then
-      d('We should exit now')
+      self.Log('We should exit now')
       self.QueueActive[craftingType] = false
       SCENE_MANAGER:HideCurrentScene()
     elseif event == LLC_INSUFFICIENT_MATERIALS then
-      d('Not enough mats!')
+      self.Log('Not enough mats!')
     end
   end
 end
@@ -255,8 +263,8 @@ end
 
 function LazierCrafterQueue:Clear()
   self.InteractionTable:cancelItem()
-  for key, value in pairs(self.QueueSet) do
-    self.QueueSet[key] = false
+  for key, value in pairs(self.QueueActive) do
+    self.QueueActive[key] = false
   end
 end
 
