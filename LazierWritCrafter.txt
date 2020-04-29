@@ -2,13 +2,14 @@
 ;The Elder Scrolls® and related logos are registered trademarks or trademarks of ZeniMax Media Inc. 
 ;in the United States and/or other countries. All rights reserved.
 
-## Title: Aldanga's Lazier Writ Crafter
+## Title: Aldanga's Lazier Writ Precrafter
 ## Description: Daily writs crafting, but earlier!
 ## Author: Aldanga
 ## Version: 1.3.0
 ## APIVersion: 100030
 ## DependsOn: LibLazyCrafting>=2.995
-## SavedVariables: LazierWritCrafterSavedVariables
+## SavedVariables: LazierWritPrecrafterSettingsVars
 
 Queue.lua
+Settings.lua
 Startup.lua

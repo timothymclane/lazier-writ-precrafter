@@ -7,6 +7,7 @@ LazierWritCrafter.savedVariables = {}
 function LazierWritCrafter:Initialize()
     self.Modules.Queue = LazierCrafterQueue:New()
     self:ConsoleCommands()
+    self.Settings = LazierWritPrecrafterSettings:New()
 end
 
 function LazierWritCrafter:OnAddOnLoaded(event, addonName)
@@ -14,20 +15,19 @@ function LazierWritCrafter:OnAddOnLoaded(event, addonName)
         return
     end
 
-    self.savedVariables =
-        ZO_SavedVars:NewAccountWide("LazierWritCrafterSavedVariables", 1, nil, LazierWritCrafter.defaultVars)
     EVENT_MANAGER:UnregisterForEvent(ADDON_NAME, EVENT_ADD_ON_LOADED)
     self:Initialize()
 end
 
 function LazierWritCrafter:SetCraftingQueue(multiplier)
-    local queue = {
-        CRAFTING_TYPE_CLOTHIER,
-        CRAFTING_TYPE_BLACKSMITHING,
-        CRAFTING_TYPE_WOODWORKING,
-        CRAFTING_TYPE_JEWELRYCRAFTING,
-        CRAFTING_TYPE_ENCHANTING
-    }
+    local queue = {}
+    for profession, enabled in pairs(self.Settings:GetSettings().professions) do
+        if enabled then table.insert(queue, profession) end
+    end
+    if #queue == 0 then
+        d("No professions are selected. Could not queue items.")
+        return 
+    end
     for k, v in pairs(queue) do
         self.Modules.Queue:AddProfession(v, multiplier)
     end
