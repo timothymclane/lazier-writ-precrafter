@@ -1,16 +1,16 @@
-LazierWritCrafter = ZO_Object:Subclass()
+LazierWritPrecrafter = ZO_Object:Subclass()
 
-LazierWritCrafter.NAME = "LazierWritCrafter"
-LazierWritCrafter.Modules = {}
-LazierWritCrafter.savedVariables = {}
+LazierWritPrecrafter.NAME = "LazierWritPrecrafter"
+LazierWritPrecrafter.Modules = {}
+LazierWritPrecrafter.savedVariables = {}
 
-function LazierWritCrafter:Initialize()
+function LazierWritPrecrafter:Initialize()
     self.Modules.Queue = LazierCrafterQueue:New()
     self:ConsoleCommands()
     self.Settings = LazierWritPrecrafterSettings:New()
 end
 
-function LazierWritCrafter:OnAddOnLoaded(event, addonName)
+function LazierWritPrecrafter:OnAddOnLoaded(event, addonName)
     if (addonName ~= self.NAME) then
         return
     end
@@ -19,7 +19,7 @@ function LazierWritCrafter:OnAddOnLoaded(event, addonName)
     self:Initialize()
 end
 
-function LazierWritCrafter:SetCraftingQueue(multiplier)
+function LazierWritPrecrafter:SetCraftingQueue(multiplier)
     local queue = {}
     for profession, enabled in pairs(self.Settings:GetSettings().professions) do
         if enabled then table.insert(queue, profession) end
@@ -33,7 +33,7 @@ function LazierWritCrafter:SetCraftingQueue(multiplier)
     end
 end
 
-function LazierWritCrafter:ConsoleCommands()
+function LazierWritPrecrafter:ConsoleCommands()
     SLASH_COMMANDS["/scq"] = function(args)
         local multiplier = tonumber(args) or 1
         self:SetCraftingQueue(multiplier)
@@ -44,9 +44,9 @@ function LazierWritCrafter:ConsoleCommands()
 end
 
 EVENT_MANAGER:RegisterForEvent(
-    LazierWritCrafter.NAME,
+    LazierWritPrecrafter.NAME,
     EVENT_ADD_ON_LOADED,
     function(...)
-        LazierWritCrafter:OnAddOnLoaded(...)
+        LazierWritPrecrafter:OnAddOnLoaded(...)
     end
 )

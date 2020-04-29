@@ -25,11 +25,11 @@ Target.create "Copy" (fun _ ->
   ++ "**/*.md"
   -- "**.fake/**/*"
   |> GlobbingPattern.setBaseDir "./"
-  |> Shell.copyFilesWithSubFolder "build/LazierWritCrafter/"
+  |> Shell.copyFilesWithSubFolder "build/LazierWritPrecrafter/"
 )
 
 Target.create "Deploy" (fun p ->
-  (sprintf "lazier-writ-crafter-%s.zip" p.Context.Arguments.Head, !! "build/LazierWritCrafter/**")
+  (sprintf "lazier-writ-precrafter-%s.zip" p.Context.Arguments.Head, !! "build/LazierWritPrecrafter/**")
   ||> Zip.zip "build/"
   Shell.cleanDir buildDir
 )

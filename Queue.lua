@@ -245,7 +245,7 @@ function LazierCrafterQueue:CallbackFunction()
 end
 
 function LazierCrafterQueue:Initialize()
-  self.InteractionTable = LibLazyCrafting:AddRequestingAddon(LazierWritCrafter.NAME, true, self:CallbackFunction(), "Aldanga")
+  self.InteractionTable = LibLazyCrafting:AddRequestingAddon(LazierWritPrecrafter.NAME, true, self:CallbackFunction(), "Aldanga")
   self.QueueActive = {}
 end
 
