@@ -16,7 +16,7 @@ function LazierWritPrecrafterSettings:New()
   return obj
 end
 
-local optionsName = 'BagofHolding' .. 'Panel'
+local optionsName = 'LazierWritPrecrafterPanel'
 
 local PROFESSION_CONSTANTS = {
   [CRAFTING_TYPE_BLACKSMITHING] =  SI_ITEMFILTERTYPE13,
