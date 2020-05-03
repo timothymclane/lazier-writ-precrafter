@@ -156,8 +156,7 @@ local defaultWritOptions = {
   [11] = nil, --reference
   [12] = false,
   [13] = false,
-  [14] = false,
-  [16] = true
+  [14] = false
 }
 
 local BASE_LEVELS = {
@@ -272,7 +271,7 @@ function LazierCrafterQueue:AddProfession(professionId, multiplier)
     local craftingPassive = GetNonCombatBonus(CRAFTING_BONUSES[professionId])
     local potency = POTENCY_IDS[craftingPassive]
     for k, essence in pairs(ESSENCE_IDS) do
-      local requestTable = self.InteractionTable:CraftEnchantingItemId(potency, essence, TA, true, nil, nil, multiplier, true)
+      local requestTable = self.InteractionTable:CraftEnchantingItemId(potency, essence, TA, true, nil, nil, multiplier)
     end
   else
     local craftingPassive = GetNonCombatBonus(CRAFTING_BONUSES[professionId])
