@@ -7,7 +7,7 @@
 ## Author: Aldanga
 ## Version: 1.6.0
 ## APIVersion: 100031
-## DependsOn: LibLazyCrafting>=2996
+## DependsOn: LibLazyCrafting>=2996 LibAddonMenu-2.0>=28
 ## SavedVariables: LazierWritPrecrafterSettingsVars
 
 Queue.lua
