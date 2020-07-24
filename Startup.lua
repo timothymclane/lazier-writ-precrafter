@@ -35,7 +35,13 @@ end
 
 function LazierWritPrecrafter:ConsoleCommands()
     SLASH_COMMANDS["/scq"] = function(args)
-        local multiplier = tonumber(args) or 1
+        local multiplier 
+        if args == "" then
+            multiplier = math.floor((GetBagSize(BAG_BACKPACK) - GetNumBagUsedSlots(BAG_BACKPACK))/37)
+            d("Creating "..multiplier.." sets")
+        else
+            multiplier = tonumber(args) or 1
+        end
         self:SetCraftingQueue(multiplier)
     end
     SLASH_COMMANDS["/clearqueue"] = function()
