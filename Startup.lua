@@ -4,6 +4,8 @@ LazierWritPrecrafter.NAME = "LazierWritPrecrafter"
 LazierWritPrecrafter.Modules = {}
 LazierWritPrecrafter.savedVariables = {}
 
+local QUEUE_SIZE = 37
+
 function LazierWritPrecrafter:Initialize()
     self.Modules.Queue = LazierCrafterQueue:New()
     self:ConsoleCommands()
@@ -33,16 +35,31 @@ function LazierWritPrecrafter:SetCraftingQueue(multiplier)
     end
 end
 
+local function GetMultiplierAndQueue(args, bagSpace, force)
+    local multiplier
+    if args == "" then
+        if multiplier == 0 and not force then d("Not enough bag space to queue a rotation.") return end
+        multiplier = math.floor(bagSpace / QUEUE_SIZE)
+    else
+        multiplier = tonumber(args) or 1
+    end
+    if multiplier == 0 then d("Cannot queue zero rotations.") return end
+    d("Queuing " .. multiplier .. " rotations.")
+    self:SetCraftingQueue(multiplier)
+end
+
 function LazierWritPrecrafter:ConsoleCommands()
     SLASH_COMMANDS["/scq"] = function(args)
-        local multiplier 
-        if args == "" then
-            multiplier = math.floor((GetBagSize(BAG_BACKPACK) - GetNumBagUsedSlots(BAG_BACKPACK))/37)
-            d("Creating "..multiplier.." sets")
-        else
-            multiplier = tonumber(args) or 1
+        local bagSpace = GetNumBagFreeSlots(BAG_BACKPACK)
+        if bagSpace < QUEUE_SIZE then
+            d("Not enough bag space to queue a rotation. If you want to force queuing, use the /scqf command.")
+            return
         end
-        self:SetCraftingQueue(multiplier)
+        GetMultiplierAndQueue(args, bagSpace)
+    end
+    SLASH_COMMANDS["/scqf"] = function(args)
+        local bagSpace = GetNumBagFreeSlots(BAG_BACKPACK)
+        GetMultiplierAndQueue(args, bagSpace, true)
     end
     SLASH_COMMANDS["/clearqueue"] = function()
         self.Modules.Queue:Clear()
