@@ -144,7 +144,7 @@ local DAILY_ROTATION = {
   }
 }
 
-local STYLE_ID = 3
+local STYLE_ID = LLC_FREE_STYLE_CHOICE
 
 local defaultWritOptions = {
   [4] = STYLE_ID,
@@ -244,7 +244,8 @@ function LazierCrafterQueue:CallbackFunction()
 end
 
 function LazierCrafterQueue:Initialize()
-  self.InteractionTable = LibLazyCrafting:AddRequestingAddon(LazierWritPrecrafter.NAME, true, self:CallbackFunction(), "Aldanga")
+  self.InteractionTable = LibLazyCrafting:AddRequestingAddon(LazierWritPrecrafter.NAME, true, self:CallbackFunction(), "Aldanga", {true,true,true,true,true,true,true,true,true,true,[34] = true}) 
+  -- Or use this to piggy back off writ crafter's:    WritCreater:GetSettings().styles)
   self.QueueActive = {}
 end
 
