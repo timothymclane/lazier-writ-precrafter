@@ -7,6 +7,8 @@ First up, this addon would not be possible without Dolgubon and [LibLazyCrafting
 ## Commands
 `/scq [multipler]` will craft items for selected daily writs for the desired number of rotations. A rotation is a 3-day cycle for a particular profession. With all supported professions enabled, `/scq` will craft 37 total items. Crafting a set of 3 rotations (via `/scq 3`) would queue up 111 items to be crafted, so keep that in mind when queuing up rotations.
 
+NOTE: Calling `/scq` without passing a multiplier will craft the maximum number of daily rotations based upon available bag space.
+
 `/clearqueue` will clear the current character's queue.
 
 ## Settings
@@ -16,9 +18,9 @@ You can enable (or disable) professions in the settings menu.
 ## Caveats
 Queued items are NOT saved to variables, so if you crash or otherwise log out, your queue will be gone.
 
-Items can only be crafted in Orc style (for now), so your character **must** know that particular style book.
+Thanks to Doglubon's work in LibLazyCrafting, items will be crafted in the style your character knows for which you have the most style stones.
 
-If you enter a station without sufficient mats to craft the entirety of that station's queue, you will force-leave the station without crafting all of the items and without any obviously messaging from the addon. I intend to add messaging support (errors and warnings) in a future update, but I figured I might as well release this to the public since it's proved so useful to myself and my wonderful testers.
+If you enter a station without sufficient mats to craft the entirety of that station's queue, you will force-leave the station without crafting all of the items and without any obvious messaging from the addon. I intend to add messaging support (errors and warnings) in a future update, but I figured I might as well release this to the public since it's proved so useful to myself and my wonderful testers.
 
 ## Support
 If you run into problems or have suggestions not covered here, please provide feedback and I will try to be as helpful as possible.
