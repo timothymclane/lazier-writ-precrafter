@@ -5,6 +5,7 @@
 ## Title: Aldanga's Lazier Writ Precrafter
 ## Description: Daily writs crafting, but earlier!
 ## Author: Aldanga
+## Version: 1.7.0
 ## APIVersion: 100031 100032
 ## DependsOn: LibLazyCrafting>=2996 LibAddonMenu-2.0>=28
 ## SavedVariables: LazierWritPrecrafterSettingsVars

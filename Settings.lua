@@ -1,5 +1,5 @@
 local ADDON_NAME = 'Aldanga\'s Lazier Writ Precrafter'
-local ADDON_VERSION = '1.6.0'
+local ADDON_VERSION = '1.7.0'
 
 local LAM2 = LibAddonMenu2
 
