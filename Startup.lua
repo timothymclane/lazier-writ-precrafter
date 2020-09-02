@@ -51,7 +51,7 @@ end
 
 function LazierWritPrecrafter:OutputProgress()
     for professionId = 1, 7 do
-        if self.QueueActive[professionId] then
+        if LazierCrafterQueue.QueueActive[professionId] then
             d("Currently crafting "..GetCraftingSkillName(1))
         else
             d("No crafts queued for "..GetCraftingSkillName(1))
