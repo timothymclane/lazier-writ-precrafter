@@ -49,6 +49,16 @@ function LazierWritPrecrafter:GetMultiplierAndQueue(args, bagSpace, force)
     self:SetCraftingQueue(multiplier)
 end
 
+function LazierWritPrecrafter:OutputProgress()
+    for professionId = 1, 7 do
+        if LazierCrafterQueue.QueueActive[professionId] then
+            d("Currently crafting "..GetCraftingSkillName(1))
+        else
+            d("No crafts queued for "..GetCraftingSkillName(1))
+        end
+    end
+end
+
 function LazierWritPrecrafter:ConsoleCommands()
     SLASH_COMMANDS["/scq"] = function(args)
         local bagSpace = GetNumBagFreeSlots(BAG_BACKPACK)
@@ -61,6 +71,9 @@ function LazierWritPrecrafter:ConsoleCommands()
     SLASH_COMMANDS["/scqf"] = function(args)
         local bagSpace = GetNumBagFreeSlots(BAG_BACKPACK)
         self:GetMultiplierAndQueue(args, bagSpace, true)
+    end
+    SLASH_COMMANDS["/scqprogress"] = function()
+        self:OutputProgress()
     end
     SLASH_COMMANDS["/clearqueue"] = function()
         self.Modules.Queue:Clear()
